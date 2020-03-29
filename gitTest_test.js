@@ -11,6 +11,5 @@ Scenario('test something', (I) => {
     I.click({xpath: "(//cite[./text()='www.brno.cz'])[1]"})
     I.seeInTitle('Brno - oficiální web statutárního města Brna')
     // I.waitForElement({xpath: "//span[./text()='Brno aktuálně']"})
-    // pause()
 
 });
