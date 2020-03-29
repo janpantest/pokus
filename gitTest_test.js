@@ -1,4 +1,4 @@
-Feature('cosi');
+Feature('Flow');
 
 Scenario('test something', (I) => {
     I.amOnPage('https://google.cz/')
@@ -11,5 +11,7 @@ Scenario('test something', (I) => {
     I.click({xpath: "(//cite[./text()='www.brno.cz'])[1]"})
     I.seeInTitle('Brno - oficiální web statutárního města Brna')
     // I.waitForElement({xpath: "//span[./text()='Brno aktuálně']"})
-
+    I.waitForElement({xpath: "//a[./text()='O webu']"})
+    I.click({xpath: "//a[./text()='O webu']"})
+    I.seeInTitle('Brno - O webu')
 });
